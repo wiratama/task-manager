@@ -1,4 +1,4 @@
-class SubtasksController < ApplicationController
+class SubtasksController < PublicAppsController
   before_action :set_subtask, only: [:show, :edit, :update, :destroy]
 
   # GET /subtasks

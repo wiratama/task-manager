@@ -1,7 +1,9 @@
+# class ActionDispatch::Routing::Mapper
+# 	def draw(routes_path, routes_name)
+# 		instance_eval(File.read(Rails.root.join("config/routes/#{routes_path}/#{routes_name}.rb")))
+# 	end
+# end
+
 Rails.application.routes.draw do
-  resources :taskattachments
-  resources :subtasks
-  resources :tasks
-  resources :boards
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+	draw :routesadmin, :admin_dashboard
 end

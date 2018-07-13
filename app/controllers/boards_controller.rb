@@ -1,4 +1,4 @@
-class BoardsController < ApplicationController
+class BoardsController < PublicAppsController
   before_action :set_board, only: [:show, :edit, :update, :destroy]
 
   # GET /boards

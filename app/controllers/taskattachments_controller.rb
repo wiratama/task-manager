@@ -1,4 +1,4 @@
-class TaskattachmentsController < ApplicationController
+class TaskattachmentsController < PublicAppsController
   before_action :set_taskattachment, only: [:show, :edit, :update, :destroy]
 
   # GET /taskattachments
