@@ -1,0 +1,2 @@
+class Taskattachment < ApplicationRecord
+end
