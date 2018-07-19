@@ -5,5 +5,6 @@
 # end
 
 Rails.application.routes.draw do
+  resources :firms
 	draw :routesadmin, :admin_dashboard
 end
