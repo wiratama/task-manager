@@ -12,19 +12,19 @@
 
 ActiveRecord::Schema.define(version: 2018_07_19_175536) do
 
-  create_table "boards", primary_key: "board_id", options: "ENGINE=MyISAM DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "boards", primary_key: "board_id", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "title", null: false
     t.integer "sort_no", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "firms", options: "ENGINE=MyISAM DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "firms", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "subtasks", primary_key: "subtask_id", options: "ENGINE=MyISAM DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "subtasks", primary_key: "subtask_id", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "title", null: false
     t.text "description"
     t.integer "sort_no", default: 1
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2018_07_19_175536) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "taskattachments", primary_key: "taskattachment_id", options: "ENGINE=MyISAM DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "taskattachments", primary_key: "taskattachment_id", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.text "filepath"
     t.text "fileurl"
     t.integer "sort_no", default: 1
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2018_07_19_175536) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "tasks", primary_key: "task_id", options: "ENGINE=MyISAM DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "tasks", primary_key: "task_id", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "title", null: false
     t.text "description"
     t.integer "sort_no", default: 1

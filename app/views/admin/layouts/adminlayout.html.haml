@@ -1,5 +1,12 @@
 !!! 5
 %html
-	= render "/admin/partials/header"
-	%body
-		= yield
+	= render "/admin/partials/head"
+	%body.fixed-header.dashboard
+		= render "/admin/partials/sidenav"
+		= render "/admin/partials/header"
+		%div.page-container
+			%div.page-content-wrapper
+				= yield
+			= render "/admin/partials/footer"
+		= render "/admin/partials/sidenotif"
+		= render "/admin/partials/footerscript"
