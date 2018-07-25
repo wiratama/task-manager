@@ -1,10 +1,12 @@
 <template>
     <div>
-    	<component-header></component-header>
     	<component-sidenav></component-sidenav>
 	    <div class="page-container">
+    		<component-header></component-header>
 	        <div class="page-content-wrapper">
-	            <router-view></router-view>
+		        <div class="content">
+		            <router-view></router-view>
+		        </div>
 	        </div>
 	    </div>
 	    <component-footer></component-footer>
