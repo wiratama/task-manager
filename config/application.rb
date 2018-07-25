@@ -17,6 +17,6 @@ module TaskManager
     # the framework and any gems in your application.
 
     # turn assets pipeline off
-    config.assets.enabled = false
+    #config.assets.enabled = false
   end
 end
