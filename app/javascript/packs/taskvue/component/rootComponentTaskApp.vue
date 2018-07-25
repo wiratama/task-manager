@@ -11,15 +11,15 @@
 	</div>
 </template>
 <script>
-import componentHeader from '/partials/header.vue';
-import componentSidenav from '/partials/sidenav.vue';
-import componentFooter from '/partials/footer.vue';
+import componentHeader from './partials/header.vue';
+import componentSidenav from './partials/sidenav.vue';
+import componentFooter from './partials/footer.vue';
 
 export default {
 	components: {
-		'component-header' : componentHeader,
-		'component-sidenav' : componentSidenav,
-		'component-footer' : componentFooter,
+		'componentHeader' : componentHeader,
+		'componentSidenav' : componentSidenav,
+		'componentFooter' : componentFooter,
 	}
 }
 </script>
