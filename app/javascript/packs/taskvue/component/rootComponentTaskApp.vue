@@ -1,15 +1,14 @@
 <template>
     <div>
-    	<component-sidenav></component-sidenav>
-	    <div class="page-container">
-    		<component-header></component-header>
-	        <div class="page-content-wrapper">
-		        <div class="content">
+    	<component-header></component-header>
+	    <div class="columns">
+    		<component-sidenav></component-sidenav>
+	        <div class="column">
+	        	<section class="section">
 		            <router-view></router-view>
-		        </div>
+		        </section>
 	        </div>
 	    </div>
-	    <component-footer></component-footer>
 	</div>
 </template>
 <script>
