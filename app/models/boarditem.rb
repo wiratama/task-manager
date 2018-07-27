@@ -1,0 +1,2 @@
+class Boarditem < ApplicationRecord
+end

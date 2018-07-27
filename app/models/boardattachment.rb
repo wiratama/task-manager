@@ -1,0 +1,2 @@
+class Boardattachment < ApplicationRecord
+end

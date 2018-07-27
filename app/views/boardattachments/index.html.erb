@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Boardattachments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boardattachments.each do |boardattachment| %>
+      <tr>
+        <td><%= link_to 'Show', boardattachment %></td>
+        <td><%= link_to 'Edit', edit_boardattachment_path(boardattachment) %></td>
+        <td><%= link_to 'Destroy', boardattachment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boardattachment', new_boardattachment_path %>

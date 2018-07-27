@@ -1,0 +1,17 @@
+<%= form_with(model: boarditem, local: true) do |form| %>
+  <% if boarditem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(boarditem.errors.count, "error") %> prohibited this boarditem from being saved:</h2>
+
+      <ul>
+      <% boarditem.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
