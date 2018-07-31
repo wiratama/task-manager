@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-        </nav>  
+        </nav>
         <section class="hero is-success">
             <div class="hero-head">
                 
